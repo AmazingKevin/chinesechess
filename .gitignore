@@ -1,0 +1,44 @@
+# files for the dex VM
+*.dex
+
+#built application files
+*.apk
+*.ap_
+*.iml
+# Java class files
+*.class
+.DS_Store
+# Windows thumbnail db
+Thumbs.db
+proj.android/local.properties
+proj.android/bin/*
+proj.android/gen/*
+proj.android/out/*
+proj.android/.gradle/*
+proj.android/build/*
+proj.android/proguard/*
+proj.android/.idea/*
+proj.android/gradle/*
+proj.android/gradlew
+proj.android/gradlew.bat
+cocos2d/*
+
+
+proj.ios_mac/ios/build/*
+*.pbxuser
+!default.pbxuser
+*.mode1v3
+!default.mode1v3
+*.mode2v3
+!default.mode2v3
+*.perspectivev3
+!default.perspectivev3
+xcuserdata
+profile
+*.moved-aside
+DerivedData
+.idea/
+*.hmap
+*.xccheckout
+*.xcworkspace
+!default.xcworkspace
