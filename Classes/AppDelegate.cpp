@@ -1,7 +1,7 @@
 
 #include "AppDelegate.h"
 #include "StartScene.h"
-
+#include "Common.h"
 // #define USE_AUDIO_ENGINE 1
 // #define USE_SIMPLE_AUDIO_ENGINE 1
 
@@ -18,8 +18,7 @@ using namespace CocosDenshion;
 #endif
 
 USING_NS_CC;
-#define GAME_WIDTH 1280
-#define GAME_HEIGHT 720
+
 
 AppDelegate::AppDelegate()
 {
@@ -76,7 +75,11 @@ bool AppDelegate::applicationDidFinishLaunching() {
 
     register_all_packages();
 
-
+    //文件读写
+    auto fileUtils = FileUtils::getInstance();
+    fileUtils->addSearchPath("fonts");
+    fileUtils->addSearchPath("res");
+    fileUtils->addSearchPath("sounds");
 
 
     // run
